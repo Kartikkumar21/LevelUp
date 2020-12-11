@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "pep foundation",
+			"path": "..\\..\\..\\pep foundation"
+		},
+		{
+			"name": "level up",
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\python"
+		}
+	],
+	"settings": {}
+}
