@@ -58,7 +58,7 @@ public class recursion{
         return Math.max(arr[idx],maximum(arr,idx + 1));
     }
 
-    public static int minimum(int[] arr,int idx){
+    public static int minimum(-int[] arr,int idx){
         if(idx==arr.length) return (int)1e9;
         return Math.min(arr[idx],minimum(arr,idx + 1));
     }
@@ -68,7 +68,7 @@ public class recursion{
         if(arr[idx]==data) return true;
         return find(arr,idx+1,data);
     }
-
+     
     public static int fisrtIndex(int[] arr,int idx,int data){
         if(idx==arr.length) return -1;
         if(arr[idx]==data) return idx;
@@ -77,7 +77,7 @@ public class recursion{
     
     public static int lastIndex(int[] arr,int idx,int data){
         if(idx==arr.length) return -1;
-        
+
         int ans=lastIndex(arr,idx+1,data);
         if(ans!=-1) return ans;
 
@@ -108,7 +108,6 @@ public class recursion{
             return base;
         }
 
-
         char ch = str.charAt(idx);
         ArrayList<String> smallAns = subsequence(str,idx + 1);
 
@@ -126,7 +125,7 @@ public class recursion{
             System.out.println(ans);
             return 1;
         }
-
+        
         int count = 0;
         count += subsequence(str.substring(1),ans);
         count += subsequence(str.substring(1),ans + str.charAt(0));

@@ -36,7 +36,7 @@ class Btree{
     }
     public static void display(Node node){
         if(node==null){
-            return ;
+            return;
         }
         StringBuilder sb=new StringBuilder();
         sb.append(node.left==null?".":node.left.data+"");
