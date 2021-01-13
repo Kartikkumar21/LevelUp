@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 class freqmappos{
     public static void freqmap_pos(String str){
-        HashMap<Character,ArrayList<Integer>> map=new HashMap<>();
+      HashMap<Character,ArrayList<Integer>> map=new HashMap<>();
         for(int i=0;i<str.length();i++){
             char ch=str.charAt(i);
             map.putIfAbsent(ch,new ArrayList<>());
