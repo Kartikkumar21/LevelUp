@@ -82,7 +82,7 @@ public class linkedlist{
                 Node curr = prev.next;
 
                 prev.next = node;
-                curr.next = node;
+                node.next = curr;
 
                 this.elementCount++;
             }
@@ -112,7 +112,7 @@ public class linkedlist{
             return node;
         }
 
-        public int removeFirst(int val) throws Exception{
+        public int removeFirst() throws Exception{
             if(this.elementCount == 0){
                 throw new Exception("NullPointerException: -1");
             }
@@ -137,7 +137,7 @@ public class linkedlist{
             return node;
         }
 
-        public void removeLast(int val)throws Exception{
+        public void removeLast()throws Exception{
             if(this.elementCount == 0){
                 throw new Exception("NullPointerException: -1");
             }
@@ -220,3 +220,4 @@ public class linkedlist{
             Node node = getNodeAt(idx);
             return node.data;
         }
+}
