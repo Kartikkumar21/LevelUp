@@ -74,6 +74,6 @@ public class NodeToRootpath{
         Node root=constTree(arr);
         // display(root);
         ArrayList<Node> ans=new ArrayList<>();
-        System.out.println(node2root(root,90));
+        System.out.println(nodeToRootPath(root,90));
     }
 }
