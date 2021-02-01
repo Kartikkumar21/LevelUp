@@ -53,7 +53,7 @@ class bfs{
             }
         }
     }
-                // line wise
+    // line wise
     public static void BFS_03(Node node){
         LinkedList<Node> que = new LinkedList<>();
         que.addLast(node);
