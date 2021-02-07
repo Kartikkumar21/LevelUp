@@ -1,4 +1,4 @@
-public static void width(Node node,int level, int[] maxMin){
+ public static void width(Node node,int level, int[] maxMin){
         if(node == null) return;
 
         maxMin[0] = Math.max(maxMin[0],level);
