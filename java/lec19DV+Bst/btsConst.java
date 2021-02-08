@@ -13,7 +13,7 @@ class bstConst{
    
     public static Node constructTree(int[] arr, int si, int ei){
     if (si > ei)
-        return null;-
+        return null;
 
     int mid = (si + ei) / 2;
     Node node = new Node(arr[mid]);
