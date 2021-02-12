@@ -1,25 +1,24 @@
-class BSTiterator{
 //Leetcode 173
-public static class BSTIterator{
-    Stack<TreeNode> st=new Stack<>();
-    BSTIterator(TreeNode root){
-        allLeft(root);
+class BSTIterator {
+        Stack<TreeNode> st=new Stack<>();
+    public BSTIterator(TreeNode root) {
+
+    allLeft(root);
     }
     public void allLeft(TreeNode node){
-        while (node != nullptr)
+        while (node != null)
         {
             st.push(node);
-            node = node->left;
+            node = node.left;
         }
     }
     public int next(){
-        TreeNode node = st.top();
-        st.pop();
-        allLeft(node->right);
+        TreeNode node = st.pop();
+        allLeft(node.right);
 
-        return node->val;
+        return node.val;
     }
-    public bool hasNext(){
+    public boolean hasNext(){
         return st.size() != 0;
     }
 }
