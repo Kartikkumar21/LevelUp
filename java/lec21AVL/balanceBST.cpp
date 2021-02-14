@@ -14,7 +14,7 @@ class Solution
         return lh - rh;
     }
 
-    TreeNode *rightRotation(TreeN * O(1)
+    TreeNode *rightRotation(TreeNode *A) // O(1)
     {
         TreeNode *B = A->left;
         TreeNode *BKaRight = B->right;
@@ -26,7 +26,7 @@ class Solution
         return getRotation(B);
     }
 
-    TreeNode *leftRotation(TreeN *O(1)
+    TreeNode *leftRotation(TreeNode *A) //O(1)
     {
         TreeNode *B = A->right;
         TreeNode *BKaLeft = B->left;
@@ -38,28 +38,29 @@ class Solution
         return getRotation(B);
     }
 
-    TreeNode *getRotation(TreeNodeod O(1)
+    TreeNode *getRotation(TreeNode *node) // O(1)
     {
 
-        if (getBalance(node=  ll,lr
+        if (getBalance(node) >= 2) // ll,lr
         {
-            if (getBalance(node->left=  ll
+            if (getBalance(node->left) >= 1) // ll
             {
                 return rightRotation(node);
             }
-el lr
+            else // lr
             {
                 node->left = leftRotation(node->left);
                 return rightRotation(node);
             }
         }
-        else if (getBalance(node) - //rr,rl
+        else if (getBalance(node) <= -2) // rr,rl
         {
-            if (getBalance(node->right=  rl
+            if (getBalance(node->right) >= 1) // rl
             {
                 node->right = rightRotation(node->right);
                 return leftRotation(node);
-            }//el rr
+            }
+            else // rr
             {
                 return leftRotation(node);
             }
