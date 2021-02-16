@@ -1,15 +1,4 @@
-public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+// leetcode 1008
 class Solution {
     int idx=0;
     public TreeNode bstFromPreorder(int[] preorder,int lrange,int rrange) {
