@@ -1,4 +1,4 @@
-import java.util.;
+import java.util.*;
 class bstConst{
     public static class Node{
     int data = 0;
