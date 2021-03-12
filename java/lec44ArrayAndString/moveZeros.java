@@ -9,7 +9,6 @@
         int idx = 0;
         int pi = -1;
         int n  = nums.length;
-        int countzeroes = 0;
         while(idx < n) {
             if(nums[idx] != 0) {
                 pi++;
